@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background: #ddd;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100dvh;
+    background: #fefefe;
+}
+
+.container {
+    width: 100%;
+    padding: 0 135px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+header .logo {
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 33px;
+    line-height: 39px;
+    letter-spacing: 5%;
+    font-weight: 500;
+    color: #363853;
+}
+
+header .logo span {
+    color: #FF7A50;
+}
+
+header .navbar {
+    padding: 60px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #363853;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    transition: all 0.3s ease;
+}
+
+header .navbar li a:hover,
+header .navbar li a.active {
+    color: #FF7A50;
+}
+
+header > .right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+header .search i,
+header .cart i {
+    font-size: 20px;
+    color: #363853;
+}
+
+header .cart {
+    position: relative;
+}
+
+header .cart span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    border-radius: 50%;
+    color: #fff;
+    background: #FF7A50;    
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+
+header .signUp {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #FF7A50;
+}
+
+header #mobileBtn {
+    display: none;
+}
+
+header #mobileBtn i {
+    font-size: 2rem;
+}
