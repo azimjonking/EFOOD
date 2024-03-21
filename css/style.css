@@ -13,22 +13,104 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width: 100%;
     min-height: 100dvh;
     background: #fefefe;
+
+    position: relative;
 }
+
+/* reusable css start */
 
 .container {
     width: 100%;
     padding: 0 135px;
 }
 
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #363853;
+    text-transform: capitalize;
+}
+
+.title span {
+    color: #FF7A50;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #FF7A50;
+    background: #FF7A50;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    color: #FF7A50;
+    background: transparent;
+}
+
+.btn-primary:active {
+    background: #FF7A50;
+}
+
+.btn-secondary {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #FF7A50;
+}
+
+.btn-secondary:active {
+    background: #FF7A50;
+}
+
+/* reusable css end */
+
+
+
+/* header start */
+
 header {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 60px;
+    background: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .logo {
@@ -46,7 +128,6 @@ header .logo span {
 }
 
 header .navbar {
-    padding: 60px 0;
     list-style: none;
     display: flex;
     align-items: center;
@@ -117,3 +198,52 @@ header #mobileBtn {
 header #mobileBtn i {
     font-size: 2rem;
 }
+
+
+/* header end */
+
+/* home section start */
+
+.home {
+    min-height: 100dvh;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-title {
+    font-size: 66px;
+    line-height: 78px;
+}
+
+.home-subtitle {
+    margin-top: 23px;
+}
+
+.home-btns {
+    margin-top: 45px;
+}
+
+.download-btn {
+    text-decoration: underline;
+}
+
+.home-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* home section end */ 
