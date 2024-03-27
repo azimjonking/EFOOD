@@ -16,7 +16,7 @@ body {
     /* max-width: 1440px; */
     width: 100%;
     min-height: 100dvh;
-    background: #fefefe;
+    background: #efefef;
 
     position: relative;
 }
@@ -106,7 +106,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     gap: 60px;
-    background: #fff;
+    background: #efefef;
 
     position: fixed;
     top: 0;
@@ -179,18 +179,6 @@ header .cart span {
     right: -14px;
 }
 
-header .signUp {
-    padding: 14px 28px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: #FF7A50;
-}
-
 header #mobileBtn {
     display: none;
 }
@@ -247,3 +235,185 @@ header #mobileBtn i {
 }
 
 /* home section end */ 
+
+/* categories section start */
+
+.categories {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.categories .section-title {
+    text-align: center;
+}
+
+.categories-filter {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.categories-filter .category {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.categories-filter .category.active {
+    background: #FF7A50;
+}
+
+.categories-filter .category img {
+    transition: all 0.3s ease;
+
+}
+.categories-filter .category.active img {
+    filter: invert(1);
+}
+
+.categories-filter .category span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    transition: all 0.3s ease;
+}
+
+.categories-filter .category.active span {
+    color: #fff;
+}
+
+.foods-container {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.foods-container .food {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.foods-container .food .food-img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.foods-container .food .food-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foods-container .food .stars {
+    margin-top: 10px;
+    display: flex;
+    gap: 2px;
+}
+
+.foods-container .food .stars i {
+    color: #FAC412;
+}
+
+.foods-container .food .food-name {
+    margin-top: 27px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.78px;
+    color: #363853;
+    text-align: center;
+}
+
+.foods-container .food .food-price {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.78px;
+    text-align: center;
+    color: #363853;
+}
+
+.foods-container .food .addBtn {
+    margin-top: 10px;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 2px;
+    background: #FF7A50;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.78px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.foods-container .food .addBtn:hover {
+    background: #ff9474;
+}
+
+.foods-container .food .addBtn:active {
+    background: #FF7A50;
+}
+
+.categories .controls-indicators {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.categories .controls-indicators > button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #FF7A50;
+    color: #FF7A50;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.categories .controls-indicators > button:hover {
+    background: #FF7A50;
+    color: #fff;
+}
+
+.categories .controls-indicators ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.categories .controls-indicators ul li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #363853;
+}
+
+.categories .controls-indicators ul li.active {
+    background: #FF7A50;
+}
+
+/* categories section end */
